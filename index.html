@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de Maximiliano Opazo, estudiante de Programación.">
+  <meta name="theme-color" content="#2b1d16">
+  <title>Maximiliano Opazo | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#inicio" class="logo">MO</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#estudios">Estudios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO: una ventana al atardecer, con paisaje en capas -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Estudiante de Programación</p>
+        <h1>Maximiliano <em>Opazo</em></h1>
+        <p class="hero-description">Construyo cosas pequeñas y útiles, con calma y mucha curiosidad.</p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="button">Ver proyectos</a>
+          <a href="#contacto" class="button button-ghost">Contacto</a>
+        </div>
+        <p class="hero-meta"><span class="status-dot"></span> Disponible para aprender · Santiago, Chile</p>
+      </div>
+
+      <div class="window" id="window" aria-hidden="true">
+        <div class="scene">
+          <div class="layer sky" data-depth="0.03"></div>
+          <div class="layer sun" data-depth="0.08"></div>
+          <img class="layer far" src="assets/hills-far.svg" alt="" data-depth="0.15">
+          <img class="layer mid" src="assets/hills-mid.svg" alt="" data-depth="0.3">
+          <img class="layer trees" src="assets/trees.svg" alt="" data-depth="0.5">
+          <img class="layer near" src="assets/hills-near.svg" alt="" data-depth="0.75">
+          <div class="leaves">
+            <img src="assets/leaf.svg" alt=""><img src="assets/leaf.svg" alt=""><img src="assets/leaf.svg" alt="">
+            <img src="assets/leaf.svg" alt=""><img src="assets/leaf.svg" alt=""><img src="assets/leaf.svg" alt="">
+          </div>
+          <div class="rain"></div>
+        </div>
+        <div class="frame"></div>
+        <div class="glass"></div>
+      </div>
+      <a href="#sobre-mi" class="scroll-hint" aria-label="Bajar">↓</a>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section paper">
+      <img class="float-leaf" src="assets/leaf.svg" alt="" data-speed="-0.12">
+      <div class="container narrow reveal">
+        <p class="eyebrow">01 · Sobre mí</p>
+        <h2>Una mente curiosa, <em>una taza de café</em> y un editor abierto.</h2>
+        <div class="two-col">
+          <p>Soy estudiante de Programación y actualmente estoy cursando los últimos años de enseñanza media.</p>
+          <p>Me interesa especialmente la programación, la personalización y la creación de proyectos digitales.</p>
+          <p>Me gusta investigar diferentes formas de modificar y organizar las herramientas que utilizo, buscando tener el mayor control posible sobre mis proyectos.</p>
+          <p>También me interesa explorar áreas relacionadas tanto con la tecnología como con el mundo artístico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section paper alt">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">02 · Trabajos seleccionados</p>
+          <h2>Mis proyectos</h2>
+        </div>
+        <div class="grid projects">
+          <article class="card reveal" data-speed="0.03">
+            <div class="card-top"><span>01</span><span class="tag warm">En desarrollo</span></div>
+            <p class="eyebrow small">Aplicación de escritorio</p>
+            <h3>MusicController</h3>
+            <p>Aplicación de escritorio desarrollada en C# y WPF para controlar la reproducción multimedia desde Windows mediante una interfaz compacta y personalizable.</p>
+            <ul class="chips"><li>C#</li><li>WPF</li><li>Windows</li></ul>
+            <a class="link" href="https://github.com/Makopz/MusiController" target="_blank" rel="noopener noreferrer">Ver proyecto →</a>
+          </article>
+          <article class="card reveal" data-speed="-0.03">
+            <div class="card-top"><span>02</span><span class="tag warm">En desarrollo</span></div>
+            <p class="eyebrow small">Aplicación web</p>
+            <h3>Crochet Tracker</h3>
+            <p>Aplicación web creada para organizar patrones de crochet mediante pasos personalizados, permitiendo marcar el progreso y administrar las instrucciones.</p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="link" href="https://github.com/Makopz/CrochetTracker" target="_blank" rel="noopener noreferrer">Ver proyecto →</a>
+          </article>
+          <article class="card card-next reveal" data-speed="0.03">
+            <div class="card-top"><span>03</span><span class="tag">Próximamente</span></div>
+            <p class="eyebrow small">Próximo proyecto</p>
+            <h3>Espacio reservado</h3>
+            <p>Este espacio estará destinado a uno de mis próximos proyectos, donde podré seguir experimentando con nuevas tecnologías y áreas de desarrollo.</p>
+            <span class="link muted">En planificación</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES (sección oscura: la habitación de noche) -->
+    <section id="habilidades" class="section dark">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">03 · Tecnologías y herramientas</p>
+          <h2>Mis habilidades</h2>
+          <p class="lead">Tecnologías y herramientas con las que he trabajado durante mi formación y en proyectos personales.</p>
+        </div>
+        <div class="grid skills">
+          <article class="skill reveal"><h3>Desarrollo web</h3><p>Interfaces y páginas web con las tecnologías fundamentales del frontend.</p><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
+          <article class="skill reveal"><h3>Programación</h3><p>Lenguajes para desarrollar aplicaciones, practicar lógica y explorar distintas áreas.</p><ul class="chips"><li>C#</li><li>Python</li></ul></article>
+          <article class="skill reveal"><h3>Aplicaciones</h3><p>Herramientas para crear aplicaciones de escritorio y desarrollar proyectos.</p><ul class="chips"><li>WPF</li><li>Visual Studio</li><li>VS Code</li></ul></article>
+          <article class="skill reveal"><h3>Herramientas</h3><p>Control de versiones, trabajo con repositorios y gestión de bases de datos.</p><ul class="chips"><li>Git</li><li>GitHub</li><li>MySQL</li></ul></article>
+          <article class="skill wide reveal"><h3>Desarrollo 3D</h3><p>Modelado, creación de escenas y exploración de proyectos tridimensionales.</p><ul class="chips"><li>Blender</li><li>Unity</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIOS -->
+    <section id="estudios" class="section paper">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">04 · Formación</p>
+          <h2>Mis estudios</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><span class="year">2014 — 2022</span><h3>Educación básica</h3><p>Educación básica completa.</p></li>
+          <li class="reveal"><span class="year">2023 — 2026</span><h3>Enseñanza media — Programación</h3><p>Formación técnica en el área de Programación.</p></li>
+        </ol>
+        <p class="eyebrow reveal" style="margin-top:4rem">Formación complementaria</p>
+        <div class="grid certs">
+          <article class="card reveal"><span class="tag warm">Certificación</span><h3>IBM</h3><p>Formación complementaria realizada durante mi etapa de estudiante.</p></article>
+          <article class="card reveal"><span class="tag warm">Certificación</span><h3>Cisco</h3><p>Formación complementaria relacionada con tecnología y programación.</p></article>
+          <article class="card reveal"><span class="tag">Taller</span><h3>OCI Labs</h3><p>Talleres y actividades de formación complementaria.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section dark contact">
+      <div class="lamp" aria-hidden="true"></div>
+      <div class="container narrow reveal">
+        <p class="eyebrow">05 · Contacto</p>
+        <h2>¿Quieres conocer <em>mis proyectos</em>?</h2>
+        <p class="lead">Puedes encontrarme a través de GitHub o escribirme por correo electrónico.</p>
+        <div class="hero-buttons">
+          <a href="mailto:Maxi7Opazo@gmail.com" class="button">Correo electrónico</a>
+          <a href="https://github.com/Makopz" class="button button-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Maximiliano Opazo</p>
+    <p>Portafolio personal</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
